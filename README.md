@@ -9,7 +9,7 @@ Laravel 7 & admin LTE 3
 	```
 - Masuk ke direktori aplikasi dan jalankan composer
 	```sh
-	$ cd bikerent
+	$ cd C:\xampp\htdocs\bikerent
 	$ composer install
 	```
  - Copy file .env.example menjadi .env
