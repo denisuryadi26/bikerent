@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Produk;
+use App\Kategori;
 use App\User;
 use Spatie\Permission\Models\Role;
 // use Spatie\Permission\Models\Permission;
@@ -28,9 +29,10 @@ class HomeController extends Controller
     public function index()
     {
         $produk = Produk::inRandomOrder()->paginate(10);
+        $kategori = Kategori::inRandomOrder()->paginate(10);
         $users = User::all();
         $rolesCount = Role::count();
         
-        return view('home', compact('produk', 'users', 'rolesCount'));
+        return view('home', compact('produk', 'kategori', 'users', 'rolesCount'));
     }
 }
