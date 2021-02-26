@@ -87,7 +87,7 @@
                                             </td>
                                             <td>{{$row->kategori->nama_kategori }}</td>
                                             <td class="text-center">{{$row->stok }}</td>
-                                            <td class="text-right">Rp. {{number_format($row->harga_beli) }}</td>
+                                            <td class="text-center">Rp. {{number_format($row->harga_beli) }}</td>
                                             <!-- <td class="text-right">Rp. {{number_format($row->harga_jual) }}</td> -->
                                             <td>{{$row->deskripsi}}</td>
                                             <td class="text-center">
